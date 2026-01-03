@@ -8,7 +8,7 @@ import {
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@@/history';
-import RendererWrapper0 from 'C:/Users/willi/Projects/attention-monitor/dashboard/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from 'C:/Users/Administrator/Desktop/attention-monitor/dashboard/src/pages/.umi/LocaleWrapper.jsx';
 import { routerRedux, dynamic as _dvaDynamic } from 'dva';
 
 const Router = routerRedux.ConnectedRouter;
@@ -20,7 +20,7 @@ const routes = [
       ? _dvaDynamic({
           component: () =>
             import(/* webpackChunkName: "layouts__BasicLayout" */ '../../layouts/BasicLayout'),
-          LoadingComponent: require('C:/Users/willi/Projects/attention-monitor/dashboard/src/components/PageLoading/index')
+          LoadingComponent: require('C:/Users/Administrator/Desktop/attention-monitor/dashboard/src/components/PageLoading/index')
             .default,
         })
       : require('../../layouts/BasicLayout').default,
@@ -35,7 +35,7 @@ const routes = [
           ? _dvaDynamic({
               component: () =>
                 import(/* webpackChunkName: "p__404" */ '../404'),
-              LoadingComponent: require('C:/Users/willi/Projects/attention-monitor/dashboard/src/components/PageLoading/index')
+              LoadingComponent: require('C:/Users/Administrator/Desktop/attention-monitor/dashboard/src/components/PageLoading/index')
                 .default,
             })
           : require('../404').default,
@@ -44,7 +44,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('C:/Users/willi/Projects/attention-monitor/dashboard/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('C:/Users/Administrator/Desktop/attention-monitor/dashboard/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -55,7 +55,7 @@ const routes = [
     component: __IS_BROWSER
       ? _dvaDynamic({
           component: () => import(/* webpackChunkName: "p__404" */ '../404'),
-          LoadingComponent: require('C:/Users/willi/Projects/attention-monitor/dashboard/src/components/PageLoading/index')
+          LoadingComponent: require('C:/Users/Administrator/Desktop/attention-monitor/dashboard/src/components/PageLoading/index')
             .default,
         })
       : require('../404').default,
@@ -64,7 +64,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('C:/Users/willi/Projects/attention-monitor/dashboard/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('C:/Users/Administrator/Desktop/attention-monitor/dashboard/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),

@@ -7,7 +7,7 @@ context = SerializingContext()
 socket = context.socket(zmq.SUB)
 socket.setsockopt(zmq.SUBSCRIBE, b'')
 # socket.bind("tcp://10.10.10.163:5555")
-socket.bind("tcp://*:5555")
+socket.bind("tcp://*:5556")
 from threading import Thread
 from queue import Queue
 from plotter import MetricsMonitor

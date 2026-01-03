@@ -1,6 +1,7 @@
 
 
 # face pose detection
+import os
 import torch
 import torchvision
 from torchvision.transforms import transforms
@@ -11,7 +12,11 @@ import hopenet
 class Facepose:
     def __init__(self):
         self.model = hopenet.Hopenet(torchvision.models.resnet.Bottleneck, [3, 4, 6, 3], 66)
-        saved_state_dict = torch.load('../model/hopenet_robust_alpha1.pkl', map_location="cpu")
+        # Get the project root directory (parent of attention-monitor)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
+        model_path = os.path.join(project_root, "model", "hopenet_robust_alpha1.pkl")
+        saved_state_dict = torch.load(model_path, map_location="cpu")
         self.model.load_state_dict(saved_state_dict)
         self.model.eval()
 

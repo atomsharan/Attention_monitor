@@ -1,7 +1,20 @@
+# Model files (too large)
+*.pkl
+*.pth
+*.dat
 *.mp4
-.idea
+*.bz2
+
+# Model directory
 model/*
 !model/put_your_model_here.txt
+!model/README.md
+
+# IDE
+.idea
+.vscode/
+*.swp
+*.swo
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -143,20 +156,64 @@ dashboard/_roadhog-api-doc
 
 # production
 dashboard/dist
-dashboard/.vscode
+dashboard/.vscode# Virtual environments
+venv/
+.venv/
+.venv-*/
+amv/
+ENV/
+env/
+
+# Temporary files
+*.tmp
+*.bak
+temp_*.py
+temp_*.ps1
+FINAL_RUN.bat
+RUN_DEMO.bat
+START_*.bat
+start-*.bat
+start-*.ps1
+run-*.ps1
+run-*.bat
+demo.ps1
+setup-venv.ps1
+run.ps1
+setup.ps1
+
+# Demo and instruction files (keep in separate docs folder if needed)
+DEMO_*.md
+DEMO_*.txt
+QUICK_START.md
+LOCAL_DEPLOYMENT.md
+DEPLOYMENT_SUMMARY.md
+README_TERMINAL.md
+TERMINAL_COMMANDS.txt
+START_HERE.txt
+
+# Build outputs
+cmake-*/
+dist/
+build/
+
+# AWS/Environment
+.aws/
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
 
 # misc
 dashboard/.DS_Store
 dashboard/npm-debug.log*
 dashboard/yarn-error.log
-
 dashboard/coverage
 dashboard/yarn.lock
 dashboard/package-lock.json
 dashboard/*bak
 dashboard/.vscode
-
-# visual studio code
 dashboard/.history
 dashboard/*.log
 dashboard/functions/*
